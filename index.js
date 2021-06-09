@@ -218,17 +218,24 @@ async function forceUpdate() {
   var searchInput = document.getElementById("querykey").value;
   btnClickCount = 0;
 
-  await firebase.database().ref('words/' + searchInput).set({
-    urlsArray
-  }).catch(err => {
-    console.log(err);
-    toastError = 1;
-  });
+  if(urlsArray.length != 0){
+    await firebase.database().ref('words/' + searchInput).set({
+      urlsArray
+    }).catch(err => {
+      console.log(err);
+      toastError = 1;
+    });
+  
+    btnClickCount = 0;
+    urlsArray.length = 0;
+    toastCall();
+    releaseButtons();
+  }
 
-  btnClickCount = 0;
-  urlsArray.length = 0;
-  toastCall();
-  releaseButtons();
+  else {
+    toastError = 1;
+    toastCall();
+  }
 }
 
 function releaseButtons() {
