@@ -41,6 +41,8 @@ const url = ['https://friends.fandom.com/',
   'https://pixar.fandom.com/'
 ];
 
+// Update link 73 loop count
+
 const series = ['Friends', 'H.I.M.Y.M', 'The Office (US)', 'The Big Bang Theory',
   'Batman', 'Harry Potter', 'Breaking Bad', 'G.O.T', 'PIXAR'];
 
@@ -68,7 +70,7 @@ async function fetchMovies() {
   html = '';
   document.getElementById('result').innerHTML = null;
 
-  for (i = 0; i < 8; i++) {
+  for (i = 0; i < 9; i++) {
 
     const response = await fetch(url[i] + 'api.php?action=opensearch&search=' + key + '&format=json&origin=*').then(res =>
       res.json()).then(d => {
