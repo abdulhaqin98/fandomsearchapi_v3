@@ -37,11 +37,12 @@ const url = ['https://friends.fandom.com/',
   'https://batman.fandom.com/',
   'https://harrypotter.fandom.com/',
   'https://breakingbad.fandom.com/',
-  'https://gameofthrones.fandom.com/'
+  'https://gameofthrones.fandom.com/',
+  'https://pixar.fandom.com/'
 ];
 
 const series = ['Friends', 'H.I.M.Y.M', 'The Office (US)', 'The Big Bang Theory',
-  'Batman', 'Harry Potter', 'Breaking Bad', 'G.O.T'];
+  'Batman', 'Harry Potter', 'Breaking Bad', 'G.O.T', 'PIXAR'];
 
 var title;
 var link;
