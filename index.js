@@ -48,7 +48,7 @@ const url = ['https://friends.fandom.com/',
 // Update link 73 loop count
 
 const series = ['Friends', 'H.I.M.Y.M', 'The Office (US)', 'The Big Bang Theory',
-  'Batman', 'Harry Potter', 'Breaking Bad', 'PIXAR', 'G.O.T', 'Lord of the Rings','Dragonball', 'D.C.U'];
+  'Batman', 'Harry Potter', 'Breaking Bad', 'PIXAR', 'G.O.T', 'Lord of the Rings','Dragonball', 'D.C. Database'];
 
 var title;
 var link;
