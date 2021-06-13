@@ -40,6 +40,8 @@ const url = ['https://friends.fandom.com/',
   'https://pixar.fandom.com/',
   'https://gameofthrones.fandom.com/',
   'https://lotr.fandom.com/',
+  'https://godfather.fandom.com/',
+  'https://pirates.fandom.com/',
   'https://dragonball.fandom.com/',
   'https://dc.fandom.com/'
   
@@ -48,7 +50,7 @@ const url = ['https://friends.fandom.com/',
 // Update link 73 loop count
 
 const series = ['Friends', 'H.I.M.Y.M', 'The Office (US)', 'The Big Bang Theory',
-  'Batman', 'Harry Potter', 'Breaking Bad', 'PIXAR', 'G.O.T', 'Lord of the Rings','Dragonball', 'D.C. Database'];
+  'Batman', 'Harry Potter', 'Breaking Bad', 'PIXAR', 'G.O.T', 'Lord of the Rings','The Godfather','PotC','Dragonball', 'D.C. Database'];
 
 var title;
 var link;
