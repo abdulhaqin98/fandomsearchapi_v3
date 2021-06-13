@@ -42,6 +42,7 @@ const url = ['https://friends.fandom.com/',
   'https://lotr.fandom.com/',
   'https://godfather.fandom.com/',
   'https://pirates.fandom.com/',
+  'https://bakerstreet.fandom.com/',
   'https://dragonball.fandom.com/',
   'https://dc.fandom.com/'
   
@@ -50,7 +51,7 @@ const url = ['https://friends.fandom.com/',
 // Update link 73 loop count
 
 const series = ['Friends', 'H.I.M.Y.M', 'The Office (US)', 'The Big Bang Theory',
-  'Batman', 'Harry Potter', 'Breaking Bad', 'PIXAR', 'G.O.T', 'Lord of the Rings','The Godfather','PotC','Dragonball', 'D.C. Database'];
+  'Batman', 'Harry Potter', 'Breaking Bad', 'PIXAR', 'G.O.T', 'Lord of the Rings','The Godfather','PotC','Sherlock','Dragonball', 'D.C. Database'];
 
 var title;
 var link;
@@ -76,7 +77,7 @@ async function fetchMovies() {
   html = '';
   document.getElementById('result').innerHTML = null;
 
-  for (i = 0; i < 14; i++) {
+  for (i = 0; i < 15; i++) {
 
     const response = await fetch(url[i] + 'api.php?action=opensearch&search=' + key + '&format=json&origin=*').then(res =>
       res.json()).then(d => {
