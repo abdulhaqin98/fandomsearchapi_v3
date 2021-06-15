@@ -140,6 +140,8 @@ async function fetchMovies() {
 
       // end of the new feature
 
+      if(countWords > 0) {
+
       html += `
         <div class="card my-2 py-0">
           <div class="card-body d-flex justify-content-between py-1">
@@ -150,6 +152,12 @@ async function fetchMovies() {
               <button id=${link[j]} onclick='consoPut(this);' class="btn btn-primary mx-1 col-md-1">+</button>
             </div>
           </div>`;
+      }
+
+      else {
+        html += '';
+      }
+
     } // end of for loop
 
     document.getElementById('result').innerHTML += html;
