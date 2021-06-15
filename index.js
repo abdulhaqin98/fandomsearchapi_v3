@@ -34,7 +34,6 @@ const url = ['https://friends.fandom.com/',
   'https://how-i-met-your-mother.fandom.com/',
   'https://theoffice.fandom.com/',
   'https://bigbangtheory.fandom.com/',
-  'https://batman.fandom.com/',
   'https://harrypotter.fandom.com/',
   'https://breakingbad.fandom.com/',
   'https://pixar.fandom.com/',
@@ -44,18 +43,21 @@ const url = ['https://friends.fandom.com/',
   'https://pirates.fandom.com/',
   'https://bakerstreet.fandom.com/',
   'https://dragonball.fandom.com/',
-  'https://dc.fandom.com/',
   'https://thehungergames.fandom.com/',
-  'https://marvelcinematicuniverse.fandom.com/'
+  'https://marvelcinematicuniverse.fandom.com/',
+  'https://batman.fandom.com/',
+  'https://dc.fandom.com/',
+  'https://dcmovies.fandom.com/',
+  'https://dcextendeduniverse.fandom.com/'
   
 ];
 
 // Update link 73 loop count
 
 const series = ['Friends', 'H.I.M.Y.M', 'The Office (US)', 'The Big Bang Theory',
-  'Batman', 'Harry Potter', 'Breaking Bad', 'PIXAR', 'G.O.T', 'Lord of the Rings',
-  'The Godfather','PotC','Sherlock','Dragonball', 'D.C. Database','The Hunger Games'
-  'M.C.U'];
+  'Harry Potter', 'Breaking Bad', 'PIXAR', 'G.O.T', 'Lord of the Rings',
+  'The Godfather','PotC','Sherlock','Dragonball','The Hunger Games'
+  'M.C.U', 'Batman', 'D.C. Database', 'D.C Movies', 'D.C. Extended Universe'];
 
 var title;
 var link;
@@ -81,7 +83,7 @@ async function fetchMovies() {
   html = '';
   document.getElementById('result').innerHTML = null;
 
-  for (i = 0; i < 17; i++) {
+  for (i = 0; i < 19; i++) {
 
     const response = await fetch(url[i] + 'api.php?action=opensearch&search=' + key + '&format=json&origin=*').then(res =>
       res.json()).then(d => {
