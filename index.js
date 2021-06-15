@@ -140,6 +140,8 @@ async function fetchMovies() {
 
       // end of the new feature
 
+      // if-else experimental, previously the inner-if statement was present directly.
+
       if(countWords > 0) {
 
       html += `
