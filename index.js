@@ -50,7 +50,7 @@ const url = ['https://friends.fandom.com/',
   'https://dcmovies.fandom.com/',
   'https://dcextendeduniverse.fandom.com/',
   'https://twilightsaga.fandom.com/',
-  'https://twoandahalfmen.fandom.com/'
+  'https://twoandahalfmen.fandom.com/',
   'https://suits.fandom.com/'
   
 ];
