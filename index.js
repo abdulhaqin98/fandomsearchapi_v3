@@ -62,7 +62,7 @@ const url = ['https://friends.fandom.com/',
 const series = ['Friends', 'H.I.M.Y.M', 'The Office (US)', 'The Big Bang Theory',
   'Harry Potter', 'Breaking Bad', 'PIXAR', 'G.O.T', 'Lord of the Rings',
   'The Godfather','PotC','Sherlock','Dragonball','The Hunger Games',
-  'M.C.U', 'Batman', 'D.C. Database', 'D.C Movies', 'D.C. Extended Universe','Twilight Saga','T.A.A.H.M','Suits'.'Terminator','South Park'];
+  'M.C.U', 'Batman', 'D.C. Database', 'D.C Movies', 'D.C. Extended Universe','Twilight Saga','T.A.A.H.M','Suits','Terminator','South Park'];
 
 var title;
 var link;
